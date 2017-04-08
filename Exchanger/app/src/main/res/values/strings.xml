@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Exchanger</string>
+    <string name="tab1">TỶ GIÁ</string>
+    <string name="tab2">CHUYỂN ĐỔI</string>
+    <string name="action_settings">Settings</string>
+    <string name="url">http://www.vietcombank.com.vn/ExchangeRates/ExrateXML.aspx</string>
+    <string name="key">xml_raw_data</string>
+    <string name="currencyTag">Exrate</string>
+    <string name="currencyCodeAttr">CurrencyCode</string>
+    <string name="buyAttr">Buy</string>
+    <string name="transferAttr">Transfer</string>
+    <string name="sellAttr">Sell</string>
+</resources>
