@@ -1,6 +1,7 @@
 package hcmut.exchanger;
 
 import java.io.IOException;
+import java.util.Map;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -35,6 +36,14 @@ public class Controller {
                 new ControllerCallback()
         );
     }
+
+    public double exchangeMoney(String fromCode, String toCode, double amount) {
+        Map<String, Model.Currency> currencyDict = this.mainModel.getCurrencyDict();
+        Model.Currency from = currencyDict.get(fromCode);
+        Model.Currency to = currencyDict.get(toCode);
+        return (from.getTranferPrice()*amount)/(to.getTranferPrice());
+    }
+
     private class ControllerCallback implements Callback {
 
         @Override

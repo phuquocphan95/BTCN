@@ -9,8 +9,12 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Spinner;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
@@ -20,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     private ExchangerTab exchangerTab;
     private String tab1Title;
     private String tab2Title;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +60,10 @@ public class MainActivity extends AppCompatActivity {
     public Model getModel() {
         return this.mainModel;
     }
+
+
+
+
 
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 

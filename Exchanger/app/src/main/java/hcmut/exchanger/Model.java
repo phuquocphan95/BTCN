@@ -67,6 +67,7 @@ public class Model {
                         break;
                 }
             }
+            ret.put("VND", new Currency("VND", 1.0, 1.0, 1.0));
         } catch (XmlPullParserException e) {
             e.printStackTrace();
         } catch (IOException e) {
